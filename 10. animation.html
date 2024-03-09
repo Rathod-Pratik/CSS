@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box {
+            background-color: rgb(231, 14, 50);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            
+            /* animation-name:rathod;
+            animation-duration: 8s;
+            animation-iteration-count: 3;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;
+            animation-delay: 3s;
+            animation-direction: reverse;
+         */
+
+            /* short cut */
+            /* anmation name,animation-duration,animation-timing-function,animation-delay,animation-iteration-count,animation-fill-mode: ; */
+            animation: rathod 8s ease-in 2s infinite backwards;
+        }
+
+        @keyframes rathod {
+            0% {
+                
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+              left: 0px;
+              top: 0pxs;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containar">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+
+</html>
