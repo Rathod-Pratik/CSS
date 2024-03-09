@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow and text shadow</title>
+    <style>
+.containar{
+    display: flex;
+}
+.card{
+    padding: 23px 12px;
+    margin: 23px 12px;
+    border:2px solid blue;
+    /* box-shadow: 10px 10px cyan; */
+    /* box-shadow: -10px -10px cyan; */
+    /* box-shadow: 10px 10px 4px cyan; */
+    /* box-shadow: 10px 10px 4px 5px rgba(0, 255, 51, 0.5); */
+    box-shadow: inset 3px 3px cyan
+}
+h2{
+    text-shadow: 2px 2px 2px cyan;
+}
+
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="card" id="card-1">
+            <h2>this is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti vitae ipsum sequi eaque reiciendis perspiciatis beatae officia deleniti eum.
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti vitae ipsum sequi eaque reiciendis perspiciatis beatae officia deleniti eum.
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>this is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti vitae ipsum sequi eaque reiciendis perspiciatis beatae officia deleniti eum.
+            </p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>this is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti vitae ipsum sequi eaque reiciendis perspiciatis beatae officia deleniti eum.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
