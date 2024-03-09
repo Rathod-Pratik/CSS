@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+
+        
+        
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            /* transition-property: all; */
+            /* transition-duration: 0.5s; */
+            /* transition-timing-function: ease-in; */
+            /* transition-delay: 0s; */
+            /* short cut: */
+               transition: all 0.5s ease-in-out 0.5s;
+        }
+        .box:hover{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(0, 255, 106);
+            border: 2px solid rgb(208, 142, 232);
+        }
+    </style>
+</head>
+<body>
+    <h2>tranformation</h2>
+    <div class="containar">
+        <div class="box">
+            this is tranformation
+        </div>
+    </div>
+</body>
+</html>
