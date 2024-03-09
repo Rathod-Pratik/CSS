@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child</title>
+    <style>
+.containar{
+    display: block;
+    margin: auto;
+    width: 233px;
+}
+input{
+    display: block;
+}
+input[type='text']{
+    padding: 5px;
+    border: 2px solid purple;
+}
+input[type='email']{
+    border: 2px solid green;
+}
+input[type='password']{
+    border: 2px solid blueviolet;
+}
+a[target]{
+    color: violet;
+    font-size: 2rem;
+}
+a[target='_self']{
+    color:  red;
+    font-size: 15px;
+}
+/* li:nth-child(even){
+    color: cyan;
+} */
+li:nth-child(odd){
+    color: cyan;
+}
+/* li:nth-child(4n+3){
+    color: cyan;
+} */
+    </style>
+</head>
+
+<body>
+    <div class="containar">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_blank">go to facebook</a></h1>
+        <form action="" class="form">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+            <li class="item" id="item-6">item-6</li>
+            <li class="item" id="item-7">item-7</li>
+            <li class="item" id="item-8">item-8</li>
+            <li class="item" id="item-9">item-9</li>
+            <li class="item" id="item-10">item-10</li>
+            <!-- <li class="item" id="item-1">item-1</li> -->
+        </ul>
+
+    </div>
+</body>
+
+</html>
