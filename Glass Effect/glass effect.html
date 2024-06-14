@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glass effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            height: 400px;
+            width: 400px;
+            border: 1px solid gray;
+            border-radius: 8px;
+        }
+        .center{
+            background-image: url(background.jpg);
+            background-position: center;
+            background-size: 100vw;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="container">
+            <div class="Glass">
+                <h2>Hello</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
